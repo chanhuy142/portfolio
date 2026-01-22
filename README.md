@@ -1,36 +1,178 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mobile Developer Portfolio
+
+A modern, responsive portfolio website for a mobile developer, built with Next.js 16, TypeScript, and Tailwind CSS.
+
+## Features
+
+- 🎨 **Modern UI/UX**: Beautiful gradient designs with smooth animations
+- 📱 **Fully Responsive**: Works perfectly on all devices
+- 🌙 **Dark Mode Support**: Automatic dark mode based on system preferences
+- ⚡ **Fast Performance**: Built with Next.js 16 for optimal performance
+- 🎯 **SEO Optimized**: Proper meta tags and semantic HTML
+- 📊 **Interactive Components**: Expandable project cards, contact forms, and more
+
+## Sections
+
+1. **Hero Section**: Eye-catching introduction with call-to-action buttons
+2. **Skills Section**: Visual representation of technical skills with progress bars
+3. **Projects Section**: Showcase of 6 mobile applications with details
+4. **Experience Section**: Timeline of professional work experience
+5. **Contact Section**: Contact form and information
+6. **Footer**: Social links and additional information
+
+## Tech Stack
+
+- **Framework**: Next.js 16.1.4
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **React**: 19.2.3
+- **Font**: Geist Sans & Geist Mono
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- pnpm (recommended) or npm
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+pnpm install
+# or
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+pnpm dev
+# or
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Updating Personal Information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Edit the file `app/data/portfolio.ts` to update:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Personal information (name, title, bio, contact details)
+- Skills and expertise levels
+- Project details and links
+- Work experience
+- Education
+- Testimonials
 
-## Deploy on Vercel
+### Changing Colors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The color scheme uses Tailwind CSS. Main colors are:
+- Primary: Blue (from-blue-500 to-blue-600)
+- Secondary: Purple (from-purple-500 to-purple-600)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Update these in the component files or create a custom Tailwind configuration.
+
+### Adding Images
+
+Replace placeholder images by adding your actual images to the `/public` directory and updating the paths in `app/data/portfolio.ts`.
+
+## Project Structure
+
+```
+portfolio/
+├── app/
+│   ├── components/        # React components
+│   │   ├── Navigation.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Contact.tsx
+│   │   └── Footer.tsx
+│   ├── data/             # Mock data
+│   │   └── portfolio.ts
+│   ├── layout.tsx        # Root layout
+│   ├── page.tsx          # Home page
+│   └── globals.css       # Global styles
+├── public/               # Static assets
+├── package.json
+└── README.md
+```
+
+## Mock Data
+
+The portfolio includes comprehensive mock data for:
+
+- **6 Mobile Projects**: Including fitness apps, e-commerce, messaging, food delivery, meditation, and productivity tools
+- **4 Work Experiences**: From freelance to senior developer positions
+- **Multiple Skills Categories**: Mobile frameworks, languages, tools, and backend technologies
+- **Education & Certifications**: Academic background and professional certificates
+- **Testimonials**: Client and colleague reviews
+
+## Building for Production
+
+```bash
+pnpm build
+# or
+npm run build
+```
+
+Then start the production server:
+
+```bash
+pnpm start
+# or
+npm start
+```
+
+## Deployment
+
+This project can be easily deployed to:
+
+- **Vercel**: Push to GitHub and connect to Vercel (recommended)
+- **Netlify**: Connect your repository to Netlify
+- **Other Platforms**: Any platform that supports Next.js
+
+### Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=your-repo-url)
+
+## Performance Optimizations
+
+- Server-side rendering (SSR) with Next.js
+- Optimized images with next/image (when actual images are added)
+- Minimal bundle size with tree-shaking
+- CSS optimization with Tailwind CSS
+- Lazy loading for better initial load time
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Contact
+
+For questions or feedback about this portfolio template:
+
+- Email: luuchanhuy@example.com
+- GitHub: [github.com/luuchanhuy](https://github.com/luuchanhuy)
+- LinkedIn: [linkedin.com/in/luuchanhuy](https://linkedin.com/in/luuchanhuy)
+
+---
+
+Built with ❤️ using Next.js, TypeScript, and Tailwind CSS
