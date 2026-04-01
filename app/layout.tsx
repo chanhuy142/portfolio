@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luu Chan Huy - Mobile Developer Portfolio",
-  description: "Mobile Developer specializing in iOS, Android, and React Native. Building high-quality, user-centric mobile applications with 5+ years of experience.",
-  keywords: ["Mobile Developer", "iOS Developer", "Android Developer", "React Native", "Swift", "Kotlin", "Portfolio"],
+  title: "Luu Chan Huy - Flutter & Android Developer",
+  description: "Flutter & Android Developer with 2+ years of experience building and shipping mobile apps. Strong in Flutter (BLoC, Firebase, GraphQL, WebSocket), Bluetooth/POS integrations, and release pipelines.",
+  keywords: ["Flutter Developer", "Android Developer", "Mobile Developer", "Dart", "Kotlin", "BLoC", "Firebase", "Portfolio"],
   authors: [{ name: "Luu Chan Huy" }],
   openGraph: {
-    title: "Luu Chan Huy - Mobile Developer Portfolio",
-    description: "Mobile Developer specializing in iOS, Android, and React Native applications",
+    title: "Luu Chan Huy - Flutter & Android Developer",
+    description: "Flutter & Android Developer with 2+ years of experience shipping production mobile apps",
     type: "website",
   },
 };

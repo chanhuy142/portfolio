@@ -1,58 +1,57 @@
 export const personalInfo = {
   name: "Luu Chan Huy",
-  title: "Mobile Developer",
-  tagline: "iOS & Android Developer | React Native Specialist",
-  bio: "Passionate mobile developer with 5+ years of experience building high-quality, user-centric mobile applications. Specialized in React Native, Swift, and Kotlin with a strong focus on clean architecture and exceptional user experiences.",
-  email: "luuchanhuy@example.com",
-  phone: "+84 123 456 789",
-  location: "Ho Chi Minh City, Vietnam",
+  title: "Flutter & Android Developer",
+  tagline: "Flutter | Native Android (Kotlin) | Mobile Engineer",
+  bio: "Flutter / Android Developer with 2+ years of experience building and shipping mobile apps. Strong in Flutter (BLoC, Firebase, GraphQL, WebSocket), Bluetooth/printing integrations for POS, and release pipelines to both App Store and Google Play. Also experienced with native Android (Kotlin) for feature development, bug fixing, and performance optimization in production banking and retail apps.",
+  objective: "A motivated mobile engineer eager to grow in a high-impact product environment, continuously learning and delivering high-quality features across Flutter and native Android. I aim to become a senior-level engineer capable of owning end-to-end mobile solutions from UI/UX to production release.",
+  email: "luuchanhuy142@gmail.com",
+  phone: "0901476807",
+  location: "Ho Chi Minh City, Viet Nam",
   avatar: "/avatar.jpg",
   social: {
     github: "https://github.com/luuchanhuy",
     linkedin: "https://linkedin.com/in/luuchanhuy",
-    twitter: "https://twitter.com/luuchanhuy",
   }
 };
 
 export const skills = [
   {
-    category: "Mobile Frameworks",
+    category: "Mobile",
     items: [
-      { name: "React Native", level: 95 },
-      { name: "Swift/SwiftUI", level: 90 },
-      { name: "Kotlin", level: 85 },
-      { name: "Flutter", level: 75 },
+      { name: "Flutter (BLoC, Provider)" },
+      { name: "Dart" },
+      { name: "Kotlin (Native Android)" },
     ]
   },
   {
-    category: "Languages",
+    category: "Backend & Services",
     items: [
-      { name: "JavaScript/TypeScript", level: 95 },
-      { name: "Swift", level: 90 },
-      { name: "Kotlin", level: 85 },
-      { name: "Dart", level: 75 },
-      { name: "Objective-C", level: 70 },
+      { name: "Firebase (Auth, Storage, Crashlytics)" },
+      { name: "GraphQL" },
+      { name: "WebSocket" },
     ]
   },
   {
-    category: "Tools & Technologies",
+    category: "Hardware & Integrations",
     items: [
-      { name: "Xcode", level: 90 },
-      { name: "Android Studio", level: 90 },
-      { name: "Git", level: 95 },
-      { name: "Firebase", level: 85 },
-      { name: "GraphQL", level: 80 },
-      { name: "Redux/MobX", level: 90 },
+      { name: "Bluetooth Printers" },
+      { name: "Handheld POS Devices" },
     ]
   },
   {
-    category: "Backend & APIs",
+    category: "Delivery",
     items: [
-      { name: "Node.js", level: 85 },
-      { name: "REST APIs", level: 95 },
-      { name: "GraphQL", level: 80 },
-      { name: "MongoDB", level: 75 },
-      { name: "PostgreSQL", level: 70 },
+      { name: "App Store / TestFlight Submission" },
+      { name: "Google Play Release Tracks" },
+      { name: "Crash Fixing in Review" },
+    ]
+  },
+  {
+    category: "Workflow",
+    items: [
+      { name: "Agile / Scrum" },
+      { name: "Git" },
+      { name: "CI/CD for Multi-Flavor Builds (dev / staging / prod)" },
     ]
   }
 ];
@@ -60,251 +59,106 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: "FitTrack - Fitness & Workout App",
-    description: "A comprehensive fitness tracking app with personalized workout plans, progress tracking, and social features. Built with React Native and Firebase.",
-    image: "/projects/fittrack.jpg",
-    tags: ["React Native", "Firebase", "TypeScript", "Redux"],
-    features: [
-      "Custom workout plans with AI recommendations",
-      "Real-time progress tracking and analytics",
-      "Social features: challenges and leaderboards",
-      "Integration with Apple Health and Google Fit",
+    title: "A3 PRO",
+    teamSize: "20+",
+    stack: ["Flutter", "Dart", "BLoC", "Firebase", "GraphQL", "WebSocket"],
+    platform: ["Android", "iOS"],
+    client: "Vietnamese electronics company",
+    description: "Internal application that supports and manages product resale activities for an electronics company. It streamlines internal processes and provides a structured toolset for handling resale operations.",
+    highlights: [
+      "Developed new features requested by the client.",
+      "Built reusable components/modules to accelerate future development.",
+      "Fixed bugs and improved stability.",
+      "Prepared builds for release, submitted to app stores, and handled review / submission issues.",
     ],
-    downloads: "100K+",
-    rating: 4.8,
-    platform: ["iOS", "Android"],
-    links: {
-      appStore: "https://apps.apple.com/app/fittrack",
-      playStore: "https://play.google.com/store/apps/fittrack",
-      github: "https://github.com/luuchanhuy/fittrack",
-    }
   },
   {
     id: 2,
-    title: "ShopEase - E-commerce Platform",
-    description: "Modern e-commerce mobile app with seamless shopping experience, multiple payment options, and real-time order tracking.",
-    image: "/projects/shopease.jpg",
-    tags: ["Swift", "SwiftUI", "Combine", "Stripe"],
-    features: [
-      "Advanced product search and filters",
-      "Secure payment processing with Stripe",
-      "Real-time order tracking",
-      "Push notifications for deals and updates",
+    title: "A3 Retail",
+    teamSize: "30+",
+    stack: ["Flutter", "Dart", "BLoC", "Bluetooth", "Printer"],
+    platform: ["Android", "iOS"],
+    client: undefined,
+    description: "Retail management solution used by multiple businesses to support daily sales operations. Includes invoice generation, handheld POS device integration, and other tools to improve transaction efficiency and customer service for retailers.",
+    highlights: [
+      "Implemented new features across sales flow, invoicing, and POS/printing.",
+      "Created reusable UI / logic components for cross-team use.",
+      "Maintained Bluetooth printer and handheld POS workflows.",
+      "Fixed production bugs and supported store submission / review issues.",
     ],
-    downloads: "250K+",
-    rating: 4.9,
-    platform: ["iOS"],
-    links: {
-      appStore: "https://apps.apple.com/app/shopease",
-      github: "https://github.com/luuchanhuy/shopease",
-    }
   },
   {
     id: 3,
-    title: "ChatHub - Messaging App",
-    description: "Real-time messaging application with end-to-end encryption, group chats, and multimedia sharing capabilities.",
-    image: "/projects/chathub.jpg",
-    tags: ["Kotlin", "Jetpack Compose", "WebSocket", "Room DB"],
-    features: [
-      "End-to-end encrypted messaging",
-      "Group chats with admin controls",
-      "Voice and video calls",
-      "Offline message sync",
+    title: "9 Tháng 10 Ngày",
+    teamSize: "3",
+    stack: ["Flutter", "Dart", "BLoC", "WebSocket", "Firebase"],
+    platform: ["Android", "iOS"],
+    client: undefined,
+    description: "A pregnancy tracking app that provides weekly fetal development updates, health tips, reminders for prenatal checkups, and tools to log symptoms and habits. Goal: help expectant mothers stay informed and reassured during pregnancy.",
+    highlights: [
+      "Added new features and reusable components.",
+      "Fixed bugs and handled app stability in a small agile team.",
+      "Shipped builds and handled submission issues for store release.",
     ],
-    downloads: "500K+",
-    rating: 4.7,
-    platform: ["Android"],
-    links: {
-      playStore: "https://play.google.com/store/apps/chathub",
-      github: "https://github.com/luuchanhuy/chathub",
-    }
-  },
-  {
-    id: 4,
-    title: "FoodieHub - Food Delivery",
-    description: "Food delivery app connecting users with local restaurants. Features real-time tracking, multiple cuisine options, and loyalty rewards.",
-    image: "/projects/foodiehub.jpg",
-    tags: ["React Native", "Node.js", "MongoDB", "Google Maps API"],
-    features: [
-      "Real-time order tracking with maps",
-      "Advanced restaurant and dish search",
-      "Multiple payment methods",
-      "Loyalty rewards and referral system",
-    ],
-    downloads: "300K+",
-    rating: 4.6,
-    platform: ["iOS", "Android"],
-    links: {
-      appStore: "https://apps.apple.com/app/foodiehub",
-      playStore: "https://play.google.com/store/apps/foodiehub",
-    }
-  },
-  {
-    id: 5,
-    title: "MindfulMe - Meditation App",
-    description: "Meditation and mindfulness app with guided sessions, breathing exercises, and progress tracking for mental wellness.",
-    image: "/projects/mindfulme.jpg",
-    tags: ["Flutter", "Dart", "Firebase", "Riverpod"],
-    features: [
-      "Guided meditation sessions",
-      "Customizable breathing exercises",
-      "Sleep stories and ambient sounds",
-      "Daily mindfulness reminders",
-    ],
-    downloads: "150K+",
-    rating: 4.9,
-    platform: ["iOS", "Android"],
-    links: {
-      appStore: "https://apps.apple.com/app/mindfulme",
-      playStore: "https://play.google.com/store/apps/mindfulme",
-      github: "https://github.com/luuchanhuy/mindfulme",
-    }
-  },
-  {
-    id: 6,
-    title: "TaskMaster - Productivity Tool",
-    description: "Powerful task management and productivity app with smart scheduling, team collaboration, and analytics.",
-    image: "/projects/taskmaster.jpg",
-    tags: ["SwiftUI", "Core Data", "CloudKit", "Widgets"],
-    features: [
-      "Smart task scheduling with AI",
-      "Team collaboration features",
-      "Productivity analytics and insights",
-      "iOS widgets and Apple Watch support",
-    ],
-    downloads: "75K+",
-    rating: 4.8,
-    platform: ["iOS"],
-    links: {
-      appStore: "https://apps.apple.com/app/taskmaster",
-      github: "https://github.com/luuchanhuy/taskmaster",
-    }
   }
 ];
 
 export const experience = [
   {
     id: 1,
-    company: "TechVision Solutions",
-    position: "Senior Mobile Developer",
-    period: "Jan 2022 - Present",
-    location: "Ho Chi Minh City, Vietnam",
+    company: "Nexlab Technology",
+    position: "Flutter & Android Developer",
+    period: "09/2023 – 04/2025",
+    location: "Ho Chi Minh City, Viet Nam",
     type: "Full-time",
-    description: "Leading mobile development team in building enterprise-level applications for iOS and Android platforms.",
+    description: "Built and maintained production mobile apps for retail, loyalty, and internal operations.",
     achievements: [
-      "Led a team of 5 developers in building a fintech app with 500K+ downloads",
-      "Improved app performance by 40% through code optimization",
-      "Implemented CI/CD pipeline reducing deployment time by 60%",
-      "Mentored junior developers and conducted code reviews",
+      "Developed new business features, reusable UI components, and app-wide modules.",
+      "Worked on Flutter apps (multi-flavor Android/iOS) and contributed native Android code where platform-specific integrations were required (Bluetooth printing, POS devices, release signing).",
+      "Fixed bugs, improved stability, and handled crash/edge-case issues in live environments.",
+      "Prepared builds, submitted releases to App Store / Google Play, and resolved compliance or signing issues during review.",
     ],
-    technologies: ["React Native", "Swift", "Kotlin", "TypeScript", "Firebase"]
+    technologies: ["Flutter", "Dart", "BLoC", "Firebase", "GraphQL", "WebSocket", "Kotlin", "Bluetooth"]
   },
   {
     id: 2,
-    company: "Digital Innovations Inc.",
-    position: "Mobile Developer",
-    period: "Mar 2020 - Dec 2021",
-    location: "Remote",
-    type: "Full-time",
-    description: "Developed and maintained multiple mobile applications for clients across various industries.",
+    company: "ACB Bank",
+    position: "Android Developer Intern (Native)",
+    period: "03/2023 – 06/2023",
+    location: "Ho Chi Minh City, Viet Nam",
+    type: "Internship",
+    description: "Implemented and updated native Android features (Kotlin) for internal banking app flows.",
     achievements: [
-      "Built 8+ mobile applications from scratch",
-      "Integrated third-party APIs and payment gateways",
-      "Reduced crash rate from 2.5% to 0.3%",
-      "Implemented push notifications increasing user engagement by 35%",
+      "Participated in fixing production bugs and UI inconsistencies.",
+      "Optimized parts of the codebase for performance and stability on a range of devices.",
+      "Collaborated with senior engineers on secure, standards-compliant mobile banking modules.",
     ],
-    technologies: ["React Native", "Node.js", "GraphQL", "Redux", "AWS"]
+    technologies: ["Kotlin", "Android Native", "XML"]
   },
   {
     id: 3,
-    company: "StartupHub",
-    position: "Junior Mobile Developer",
-    period: "Jun 2019 - Feb 2020",
-    location: "Ho Chi Minh City, Vietnam",
-    type: "Full-time",
-    description: "Worked on mobile app development for startup projects and MVPs.",
-    achievements: [
-      "Developed features for 3 startup applications",
-      "Collaborated with designers to implement pixel-perfect UIs",
-      "Participated in sprint planning and agile ceremonies",
-      "Wrote unit and integration tests achieving 85% code coverage",
-    ],
-    technologies: ["React Native", "JavaScript", "Redux", "Firebase"]
-  },
-  {
-    id: 4,
-    company: "Freelance",
-    position: "Mobile App Developer",
-    period: "Jan 2018 - May 2019",
+    company: "Freelancer",
+    position: "Mobile Developer",
+    period: "03/2021 – 03/2023",
     location: "Remote",
     type: "Freelance",
-    description: "Provided mobile app development services to small businesses and individuals.",
+    description: "Delivered small to mid-size mobile features for clients.",
     achievements: [
-      "Completed 12+ freelance projects successfully",
-      "Maintained 5-star rating on freelance platforms",
-      "Built long-term relationships with repeat clients",
-      "Delivered projects on time and within budget",
+      "Supported iterative UI changes and quick bug fixes under short timelines.",
     ],
-    technologies: ["React Native", "Swift", "Firebase", "REST APIs"]
+    technologies: ["Flutter", "Dart"]
   }
 ];
 
 export const education = [
   {
     id: 1,
-    institution: "University of Technology",
-    degree: "Bachelor of Computer Science",
-    field: "Software Engineering",
-    period: "2014 - 2018",
-    location: "Ho Chi Minh City, Vietnam",
-    achievements: [
-      "GPA: 3.8/4.0",
-      "Dean's List: 6 semesters",
-      "Thesis: Mobile Application Security in Cross-Platform Development",
-    ]
-  },
-  {
-    id: 2,
-    institution: "Online Certifications",
-    degree: "Professional Certificates",
-    field: "Mobile Development",
-    period: "2018 - Present",
-    location: "Online",
-    achievements: [
-      "iOS Development Nanodegree - Udacity",
-      "Android Developer Certification - Google",
-      "React Native Specialization - Meta",
-      "AWS Certified Developer",
-    ]
+    institution: "Ho Chi Minh City University of Science",
+    degree: "B.S. in Software Engineering",
   }
 ];
 
-export const testimonials = [
-  {
-    id: 1,
-    name: "Sarah Johnson",
-    position: "Product Manager at TechVision",
-    company: "TechVision Solutions",
-    avatar: "/testimonials/sarah.jpg",
-    text: "Huy is an exceptional mobile developer with a keen eye for detail. His ability to translate complex requirements into elegant mobile solutions is outstanding. He consistently delivers high-quality work ahead of schedule.",
-    rating: 5
-  },
-  {
-    id: 2,
-    name: "Michael Chen",
-    position: "CTO",
-    company: "Digital Innovations Inc.",
-    avatar: "/testimonials/michael.jpg",
-    text: "Working with Huy was a pleasure. His expertise in React Native and native development helped us launch our app successfully. He's proactive, communicative, and always brings creative solutions to the table.",
-    rating: 5
-  },
-  {
-    id: 3,
-    name: "Emily Rodriguez",
-    position: "Startup Founder",
-    company: "FoodieHub",
-    avatar: "/testimonials/emily.jpg",
-    text: "Huy transformed our idea into a beautiful, functional app. His technical skills are matched by his professionalism and dedication. I highly recommend him for any mobile development project.",
-    rating: 5
-  }
+export const languages = [
+  { name: "English", detail: "TOEIC 875" },
+  { name: "Vietnamese", detail: "Native" },
 ];

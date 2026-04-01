@@ -10,11 +10,10 @@ export default function Experience() {
           Work Experience
         </h2>
         <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-          Professional journey building innovative mobile solutions across various industries
+          Professional journey building and shipping production mobile applications
         </p>
         
         <div className="relative">
-          {/* Timeline line */}
           <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-blue-600"></div>
           
           <div className="space-y-12">
@@ -25,7 +24,6 @@ export default function Experience() {
                   idx % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                 }`}
               >
-                {/* Timeline dot */}
                 <div className="absolute left-8 md:left-1/2 w-4 h-4 bg-blue-600 rounded-full transform -translate-x-1/2 border-4 border-white dark:border-black"></div>
                 
                 <div className={`md:w-1/2 ${idx % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
@@ -46,10 +44,17 @@ export default function Experience() {
                     </h4>
                     <div className="flex flex-wrap gap-3 mb-3 text-sm text-gray-600 dark:text-gray-400">
                       <span className="flex items-center gap-1">
-                        📍 {exp.location}
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        {exp.location}
                       </span>
                       <span className="flex items-center gap-1">
-                        💼 {exp.type}
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        {exp.type}
                       </span>
                     </div>
                     <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -57,11 +62,11 @@ export default function Experience() {
                     </p>
                     
                     <div className="mb-4">
-                      <h5 className="font-semibold mb-2 text-gray-800 dark:text-white">Key Achievements:</h5>
+                      <h5 className="font-semibold mb-2 text-gray-800 dark:text-white">Key Contributions:</h5>
                       <ul className="space-y-1">
                         {exp.achievements.map((achievement, achIdx) => (
                           <li key={achIdx} className="text-sm text-gray-600 dark:text-gray-400 flex items-start gap-2">
-                            <span className="text-blue-500 mt-1">✓</span>
+                            <span className="text-blue-500 mt-1 flex-shrink-0">&#10003;</span>
                             <span>{achievement}</span>
                           </li>
                         ))}
